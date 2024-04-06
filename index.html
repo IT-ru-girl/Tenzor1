@@ -94,8 +94,15 @@
                 </div>
                 <div class="product_row">
                     <article class="product_item">
-                        <img src="./img/Preview.png"
+                        <img src="./img/Mask.png"
                              alt="">
+                        <a class="link_icon" href="">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5851 9.20312C15.9311 9.01339 15.9311 8.70089 15.5851 8.51116L0.763672 0.274553C0.41769 0.0848207 0.138672 0.252231 0.138672 0.642856V17.0714C0.138672 17.4621 0.41769 17.6295 0.763672 17.4397L15.5851 9.20312Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
                         <div class="product_block">
                             <h4 class="product_title">эксклюзив</h4>
                             <p class="product_text">
@@ -106,6 +113,13 @@
                     <article class="product_item">
                         <img src="./img/Preview1.png"
                              alt="">
+                        <a class="link_icon" href="">
+                            <svg width="16" height="18" viewBox="0 0 16 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.5851 9.20312C15.9311 9.01339 15.9311 8.70089 15.5851 8.51116L0.763672 0.274553C0.41769 0.0848207 0.138672 0.252231 0.138672 0.642856V17.0714C0.138672 17.4621 0.41769 17.6295 0.763672 17.4397L15.5851 9.20312Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
                         <div class="product_block">
                             <h4 class="product_title">высокое качество</h4>
                             <p class="product_text">
@@ -179,7 +193,7 @@
                                 <p class="content_text">Редактируйте фото и видео в режиме онлайн. Создавайте
                                     одностраничные сайты из готовых
                                     компонентов</p>
-                                <a class="price_btn" href="#">Начать бесплатно</a>
+                                <a id="btn_1" class="price_btn" href="#">Начать бесплатно</a>
                             </div>
                         </div>
                     </div>
@@ -188,13 +202,13 @@
                             <img class="price_img" src="./img/Price2.png" alt="">
                             <div class="price_content">
                                 <div class="price_header">
-                                    <p>Оптимальный-1</p>
+                                    <p>Профи</p>
                                     <p>1000₽</p>
                                 </div>
                                 <p class="content_text">Редактируйте фото и видео в режиме онлайн. Создавайте
                                     одностраничные
                                     и многостраничные сайты из готовых компонентов</p>
-                                <a class="price_btn" href="#">Начать бесплатно</a>
+                                <a id="btn_2" class="price_btn" href="#">Начать бесплатно</a>
                             </div>
 
                         </div>
@@ -206,7 +220,41 @@
     </main>
 </div>
 
+<div id='popup' class="popup  unactive">
+    <div class="popup_body">
+        <div class="popup_content">
+            <a href="#" class="popup_close"></a>
+            <div class="popup_title">Оставить заявку</div>
+            <div class="popup_text">Менеджеры перезвонят или напишут в течение дня. Поможем определиться и
+                протестировать продукт.Без спама и навязчивости
+            </div>
+        </div>
+        <form action="#" id="form" class="form_body">
+            <div class="form_content">
+                <p class="form_text">Email</p>
+                <input class="form_input" type="text" name="email">
+                <p class="form_text">Имя</p>
+                <input class="form_input" type="text" name="name">
+                <p class="form_text">Телефон</p>
+                <input class="form_input" type="number" name="phone">
+            </div>
 
+            <div class="button_form">
+                <a id="send" href="#" class="form_button">Отправить</a>
+            </div>
+            <div class="form_item">
+                <input  checked id="switchForm" class="form_check" type="checkbox" name="check">
+                <span class="popup_text">Я соглашаюсь на обработку персональных данных
+                    и присоединяюсь к регламенту СБИС</span>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="popup_finish   unactive">
+    <h3 class="popup_title">Спасибо за заявку</h3>
+    <p class="popup_text">Наши менеджеры свяжутся с вами в течении 5 минут</p>
+</div>
+<script src="js.js" ></script>
 </body>
 
 </html>
